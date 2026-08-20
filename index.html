@@ -32,6 +32,7 @@ body.modal-open{overflow:hidden;}
 img{max-width:100%; display:block;}
 .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px;}
 .wrap-wide{max-width:880px; margin:0 auto; padding:0 20px;}
+.wrap-hero-img{max-width:1180px; margin:0 auto; padding:0 16px; width:100%;}
 h1,h2,h3{font-family:'Sora',sans-serif; font-weight:700; line-height:1.12;}
 .eyebrow{font-family:'Sora',sans-serif; text-transform:uppercase; font-size:12.5px; letter-spacing:0.14em; font-weight:700;}
 a{color:inherit;}
@@ -58,8 +59,9 @@ a{color:inherit;}
 .hero h1{font-size:clamp(32px,7.4vw,48px); color:var(--ink-deep); margin-bottom:16px;}
 .hero h1 em{font-style:normal; color:var(--accent-deep); background:linear-gradient(180deg, transparent 60%, rgba(15,89,201,0.16) 60%);}
 .hero-sub{font-size:17.5px; color:var(--text-soft); max-width:50ch; margin:0 auto 30px;}
-.hero-visual{margin:8px 0 0; border-radius:14px; overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line);}
-.hero-visual img{width:100%; display:block;}
+.hero-visual{margin:20px auto 0; border-radius:14px; overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line); display:flex; justify-content:center;}
+.hero-visual img{width:100%; height:auto; display:block;}
+@media(min-width:640px){.hero-visual{margin-top:28px;}}
 
 /* Sections */
 .section{padding:44px 0;}
@@ -188,8 +190,8 @@ footer .f-line{font-size:12.5px; color:var(--text-soft); margin-top:4px;}
     <p class="hero-sub">Get our free guide — <strong>5 Ways to Capture More Leads from Facebook Groups</strong> — plus early access to ClickLeadz, the tool that automates all of it for you.</p>
     <button type="button" class="btn btn-accent js-open-modal">Get the Free Guide</button>
   </div>
-  <div class="wrap-wide hero-visual">
-    <img src="https://www.clickleadz.net/assets/images/hero-banner.png" alt="ClickLeadz dashboard showing captured Facebook leads">
+  <div class="wrap-hero-img hero-visual">
+    <img src="clickleadz-dashboard.webp" alt="ClickLeadz dashboard showing captured Facebook groups, tagged users, and lead analytics">
   </div>
 </section>
 
